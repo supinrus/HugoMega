@@ -1,4 +1,8 @@
+CXX_FLAGS := -std=c++17 -Wall $(shell pkg-config --cflags sdl2)
+LD_FLAGS := $(shell pkg-config --libs sdl2)
+CXX := g++
+
 all:
-	g++ hugomain.cpp -o hugomain -std=c++17 -Wall -lSDL2
+	$(CXX) hugomain.cpp -o hugomain $(CXX_FLAGS) $(LD_FLAGS)
 debug:
-	g++ hugomain.cpp -o hugomain -std=c++17 -Wall -lSDL2 -g
+	$(CXX) hugomain.cpp -o hugomain $(CXX_FLAGS) $(LD_FLAGS) -g
