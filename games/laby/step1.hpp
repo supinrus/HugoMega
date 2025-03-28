@@ -8,7 +8,7 @@ void labyMapLoad(SDL_Surface *screen, tilFile &labyMap, cgfFile &mapArrows, Uint
 Uint32 labyStep1(Uint32 &score, Uint32 gameMode, Uint32 playerMode, SDL_Window *window, SDL_Surface *screen,
 				tilFile& labyBack1, tilFile &labyMap, cgfFile &mapArrows)
 {
-	SDL_Event e;
+	// SDL_Event e;
 	Uint32 mapX0, mapY0;
 	if (!gameMode)
 	{

@@ -1,0 +1,5 @@
+.vscode
+.idea
+hugomain
+cmake-build-debug
+build
